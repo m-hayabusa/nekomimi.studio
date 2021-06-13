@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>ﾈｺﾐﾐｽﾀﾁﾞｵ | 音楽プレイヤー</title>
+        <meta name="description" content="ﾈｺﾐﾐｽﾀﾁﾞｵ。" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="./img/nekomimi_ico.png" />
+        <link rel="apple-touch-icon" href="./img/nekomimi_ico.png" />
+
+        <!--    <script src="https://kit.fontawesome.com/98e9262493.js"></script>-->
+    </head>
+    <body style="background-color: black">
+        <div id="line_height">1em</div>
+
+        <div id="container">
+            <div id="header_bar">
+                <img class="cover" src="./img/header.png" alt="Header" />
+                <div id="clock">
+                    <img id="clock_1" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_2" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_3" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_4" src="./img/num/num0000.png" alt="Clock" />
+                </div>
+
+                <div id="title">NEKOMIMI MUSIC PLAYER</div>
+                <div id="track_cnt">0 / 0 track</div>
+                <div id="duration">0 / 0 s</div>
+                <img id="playing" src="./img/Playing_Stop.png" />
+            </div>
+
+            <div id="main">
+                <div id="list">
+                    <ol id="nextup">
+                        <!--                <li><span>みみ</span></li>-->
+                        <!--                <li><span>しっぽ</span></li>-->
+                        <!--                <li><span>しじみ</span></li>-->
+                    </ol>
+                </div>
+                <audio id="audio"></audio>
+            </div>
+
+            <div id="footer_bar">
+                <div id="keymap">
+                    <div
+                        id="footer_button_0"
+                        class="footer_button footer_button_center"
+                    >
+                        <span>再生</span>
+                    </div>
+                    <div id="footer_button_1" class="footer_button">
+                        <span>機能</span>
+                    </div>
+                    <div id="footer_button_2" class="footer_button">
+                        <span>MENU</span>
+                    </div>
+                    <div id="footer_button_3" class="footer_button">
+                        <span>保存</span>
+                    </div>
+                    <div id="footer_button_4" class="footer_button">
+                        <span>戻る</span>
+                    </div>
+                </div>
+
+                <!--        <div id="hardware_key">-->
+                <!--            <div id="hardware_key_1"><button><i class="fas fa-phone-alt"></i><i class="fas fa-volume-up"></i></button></div>-->
+                <!--            <div id="hardware_key_2"><button>CLR</button></div>-->
+                <!--            <div id="hardware_key_3"><button><i class="fas fa-phone-slash"></i> PWR</button></div>-->
+                <!--        </div>-->
+            </div>
+        </div>
+
+        <script src="./built/music.js"></script>
+    </body>
+</html>

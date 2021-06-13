@@ -1,0 +1,74 @@
+div#title {
+    color: white;
+    font-size: 2em;
+    margin: 4em 1em 2em 0em;
+}
+
+img#playing {
+    //margin-left: -0.5em;
+    width: 26em;
+    image-rendering: crisp-edges;
+}
+
+div#list {
+    margin-top: 14em;
+    color: white;
+    ol li {
+        border-bottom: #888888 solid;
+        span {
+            height: 1em;
+            font-size: 1em;
+            line-height: 0.9em;
+            width: 10em;
+            text-overflow: clip;
+            overflow: scroll;
+            display: inline-flex;
+            scrollbar-width: none;
+            white-space: nowrap;
+        }
+        span::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    ol li:before {
+        content: "";
+        display: inline-block;
+        background-size: contain;
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        background-image: url("../img/emoji/note.png");
+    }
+}
+div#main {
+    background: #000022;
+}
+
+/* music.css | http://localhost:63342/nekomimi/css/music.css */
+
+div#title {
+    /* margin: 4em 1em 2em 0em; */
+    margin: 1em;
+}
+
+div#list {
+    /* margin-top: 14em; */
+    margin-top: 11em;
+    width: 12.5em;
+}
+
+div#track_cnt {
+    color: white;
+    position: absolute;
+    right: 1em;
+    top: 10em;
+}
+
+div#duration {
+    color: white;
+    position: absolute;
+    left: 1em;
+    top: 21em;
+}

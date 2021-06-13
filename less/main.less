@@ -1,0 +1,358 @@
+/*
+ * "KH-Dot-Kodenmachou-12-Ki" licensed under the SIL Open Font License
+ * http://jikasei.me/font/kh-dotfont/
+ */
+
+//@font-face {
+//  font-family: 'KH-Dot-Kodenmachou-12-Ki';
+//  src:
+//          url('../fonts/khdotfont-20150527/KH-Dot-Akihabara-16.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+@font-face {
+    font-family: "KH-Dot-Kodenmachou-16-Ki";
+    src: url("../fonts/khdotfont-20150527/KH-Dot-Kodenmachou-16-Ki.woff2")
+            format("woff2"),
+        url("../fonts/khdotfont-20150527/KH-Dot-Kodenmachou-16-Ki.woff")
+            format("woff"),
+        url("../fonts/khdotfont-20150527/KH-Dot-Kodenmachou-16-Ki.ttf")
+            format("truetype");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-size: 1em;
+    font-family: "KH-Dot-Kodenmachou-16-Ki", sans-serif;
+    margin: unset;
+    padding: unset;
+    font-weight: normal;
+}
+
+img.emoji {
+    width: 1em;
+    height: 1em;
+    //vertical-align: middle;
+}
+
+img.banner {
+    height: calc(31em / 12);
+    width: calc(88em / 12);
+}
+
+.bold {
+    span.full {
+        display: inline-block;
+        width: 1em;
+        font-weight: bold;
+    }
+    span.half {
+        display: inline-block;
+        width: 0.5em;
+        font-weight: bold;
+    }
+    font-weight: bold;
+}
+
+img {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+hr {
+    border: none;
+}
+hr:before {
+    color: black;
+    content: "------------------------";
+}
+
+body {
+    background: black;
+}
+
+div#line_height {
+    // 1行の高さの取得用
+    position: absolute;
+    height: 2em;
+    width: 2em;
+}
+
+article {
+    margin-top: -2em;
+    padding-top: 2em;
+}
+
+div#container,
+div#header_bar,
+div#footer_bar {
+    width: 26em;
+}
+
+@media screen and (max-width: 26em) {
+    div#container,
+    div#header_bar,
+    div#footer_bar {
+        width: 100vw;
+    }
+
+    div#container {
+        font-size: calc(99vw / 26);
+    }
+}
+
+div#footer_bar,
+div#header_bar {
+    z-index: 100;
+
+    img.cover {
+        width: 100%;
+        image-rendering: pixelated;
+    }
+
+    background: black;
+    margin: auto;
+}
+div#header_bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+div#footer_bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div#footer_bar {
+    background: black;
+
+    .footer_button,
+    .keypad {
+        position: absolute;
+        border: none;
+    }
+
+    #keymap {
+        .footer_button {
+            span {
+                color: white;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            background: #555555;
+            border: 0.1em #888888 solid;
+            box-sizing: border-box;
+            width: 8.75em;
+            height: 2em;
+            line-height: 1.8em;
+            text-align: center;
+        }
+
+        .footer_button_center {
+            width: 9em;
+            height: 4em;
+            line-height: 3.8em;
+        }
+
+        #footer_button_0 {
+            margin: auto;
+            right: 0;
+            left: 0;
+            //bottom: 3em;
+            bottom: 0em;
+        }
+
+        #footer_button_1,
+        #footer_button_3 {
+            //bottom: 5em;
+            bottom: 2em;
+        }
+
+        #footer_button_2,
+        #footer_button_4 {
+            //bottom: 3em;
+            bottom: 0;
+        }
+
+        #footer_button_1,
+        #footer_button_2 {
+            left: 0;
+        }
+
+        #footer_button_3,
+        #footer_button_4 {
+            right: 0;
+        }
+    }
+}
+
+//#hardware_key {
+//  div {
+//    background: black;
+//    padding-top: 0.5em;
+//    border: none;
+//
+//    button {
+//      font-family: "Consolas", "sans-serif";
+//      color: white;
+//      border-radius: 0.2em;
+//      border-color: #333;
+//      width: 4em;
+//      font-size: 1.5em;
+//      font-weight: bold;
+//      background: #001;
+//    }
+//
+//
+//    box-sizing: border-box;
+//    width: 8.75em;
+//    height: 3em;
+//    line-height: 1.8em;
+//    text-align: center;
+//
+//    position: absolute;
+//    bottom: 0;
+//  }
+//
+//  #hardware_key_1 {
+//    left: 0;
+//  }
+//
+//  #hardware_key_2 {
+//    margin: auto;
+//    right: 0;
+//    left: 0;
+//  }
+//
+//  #hardware_key_3 {
+//    right: 0;
+//  }
+//}
+
+div#clock {
+    img#clock_1,
+    img#clock_2,
+    img#clock_3,
+    img#clock_4 {
+        position: absolute;
+        top: 0.4em;
+        height: 2em;
+        width: 1em;
+    }
+    img#clock_1 {
+        right: 3.75em;
+    }
+    img#clock_2 {
+        right: 2.65em;
+    }
+    img#clock_3 {
+        right: 1.15em;
+    }
+    img#clock_4 {
+        right: 0em;
+    }
+}
+
+div#main {
+    background: white;
+    font-size: 2em;
+    line-height: 1em;
+    width: 12em;
+    padding: 0.5em 0.5em 3em;
+    border: 1px black solid;
+
+    min-height: 85vh;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 1em;
+}
+
+ol {
+    margin-left: 1.5em;
+}
+
+.align_right {
+    text-align: right;
+}
+
+ul {
+    li {
+        list-style-type: none;
+        list-style-position: inside;
+    }
+    li:before {
+        content: "・";
+    }
+}
+li h3 {
+    display: inline;
+}
+
+p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div#internet_menu {
+    background: gray;
+    color: white;
+    font-size: 2em;
+    line-height: 1em;
+    width: 13em;
+    border: 2px black solid;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 1.25em;
+    bottom: 2em;
+
+    margin: auto;
+
+    h3 {
+        border-bottom: 2px #555555 solid;
+        padding: 0.25em;
+        background: #555555;
+    }
+    ul {
+        padding: 0.25em 0 0 0;
+
+        li:before {
+            content: unset;
+        }
+
+        li {
+            list-style-type: decimal;
+            box-sizing: border-box;
+            padding: 0 1em;
+            border-bottom: 2px #555555 solid;
+            width: 100%;
+            height: 1.25em;
+            a {
+                text-decoration: none;
+                color: white;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-77em);
+    }
+}

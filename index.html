@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="ja" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>ﾈｺﾐﾐｽﾀﾁﾞｵ</title>
+        <meta name="description" content="ﾈｺﾐﾐｽﾀﾁﾞｵ。" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="./img/nekomimi_ico.png" />
+        <link rel="apple-touch-icon" href="./img/nekomimi_ico.png" />
+        <link href="./json/notifications.json" as="fetch" rel="preload" />
+        <script src="./built/index.js"></script>
+    </head>
+    <body>
+        <div id="line_height">1em</div>
+
+        <div id="container">
+            <div id="header_bar">
+                <img class="cover" src="./img/header.png" alt="Header" />
+                <div id="clock">
+                    <img id="clock_1" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_2" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_3" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_4" src="./img/num/num0000.png" alt="Clock" />
+                </div>
+            </div>
+
+            <div id="main">
+                <header>
+                    <!-- <div style="background: blue;color:white;width: 12em;padding: 0em 0.5em;margin: 0 -0.5em;">
+                <div style="overflow: hidden;">
+                <style>
+                @keyframes marquee {
+                    from {
+                        transform: translate(0);
+                    }
+                    to {
+                        transform: translate(-77em);
+                    }
+                }
+                </style>
+                <span style="padding-left: 13em;display: block;animation: marquee 10s steps(77,start) infinite;width: 64em;">かにたまがたべたい.wav になっています</span></div>
+                </div> -->
+
+                    <!-- <div style="background: red;width: 12em;padding: 0em 0.5em;margin: 0 -0.5em;">
+                <div style="overflow: hidden;">
+                <style>
+                @keyframes marquee {
+                    from {
+                        transform: translate(0);
+                    }
+                    to {
+                        transform: translate(-58em);
+                    }
+                }
+                </style>
+                <span style="padding-left: 13em;display: block;animation: marquee 10s steps(58,start) infinite;width: 45em;">０８／０４　１７：３０　ハードウェア更新のため、Ｍｉｓｓｋｅｙサーバーを停止しています。</span></div>
+            </div> -->
+
+                    <h1 class="title">
+                        <span class="bold"
+                            ><span class="half">ﾈ</span
+                            ><span class="half">ｺ</span
+                            ><span class="half">ﾐ</span
+                            ><span class="half">ﾐ</span
+                            ><span class="half">ｽ</span
+                            ><span class="half">ﾀ</span
+                            ><span class="half">ﾁ</span
+                            ><span class="half">ﾞ</span
+                            ><span class="half">ｵ</span></span
+                        >
+                    </h1>
+
+                    <hr />
+
+                    <div class="cover_image">
+                        <img src="./img/nekomimi_2.gif" alt="ネコミミ" />
+                    </div>
+
+                    <hr />
+
+                    <p>いらっしゃいませ</p>
+                    <hr />
+                    <nav>
+                        <h2>メニュー</h2>
+                        <ol>
+                            <li><a href="#notify">お知らせ</a></li>
+                            <li><a href="#music">音楽</a></li>
+                            <li><a href="#profiles">プロフィール</a></li>
+                            <li><a href="#contact">連絡先</a></li>
+                            <li><a href="#link">リンク</a></li>
+                        </ol>
+                    </nav>
+                </header>
+
+                <hr />
+
+                <article id="notify">
+                    <h2>お知らせ</h2>
+                    <hr />
+                    <ul>
+                        <!--
+                <li><h3>.date</h3>
+                    <p>
+                        .content
+                    </p>
+                </li>
+                -->
+                    </ul>
+
+                    <div class="align_right">
+                        <a href="notify.html">つづき</a>
+                    </div>
+                </article>
+
+                <hr />
+
+                <article id="music">
+                    <h2>音楽</h2>
+                    <hr />
+                    <ul>
+                        <li>
+                            <h3>
+                                <a
+                                    href="music.html?playlist=json/0000.json&head=0"
+                                    >いろいろ</a
+                                >
+                            </h3>
+                            <p>LSDjで作った音とかです。</p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a
+                                    href="music.html?playlist=json/kaijouyaki.json&autoplay"
+                                    >会場焼き</a
+                                >
+                            </h3>
+                            <p>
+                                M3の直前に募集して、会場でCDを焼く狂気のコンピレーションアルバムに提出した音です。
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a
+                                    rel="me"
+                                    href="https://soundcloud.com/mewl_hayabusa"
+                                >
+                                    SoundCloud
+                                    <img
+                                        class="emoji"
+                                        src="./img/emoji/soundcloud.png"
+                                        alt="SoundCloudロゴ"
+                                /></a>
+                            </h3>
+                            <p>SoundCloudのアカウントです。</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <hr />
+
+                <article id="profiles">
+                    <h2>自己紹介</h2>
+                    <hr />
+                    <p>
+                        ﾈｺﾐﾐｽﾀﾁﾞｵのmewlです。<br />
+                        読みはわかりません。<br />
+                        たまにLSDjとゲームボーイポケットを使って<a href="#music"
+                            >音</a
+                        >を作ります。<br />
+                        いろいろ作りたいなあとしています。<br />
+                        よろしくお願いします。
+                    </p>
+                </article>
+
+                <hr />
+
+                <article id="contact">
+                    <h2>アカウントなど</h2>
+                    <hr />
+
+                    <ul>
+                        <li>
+                            <h3>
+                                <a rel="me" href="https://mewl.me/@mewl"
+                                    >mewl.me</a
+                                >
+                            </h3>
+                            <p>
+                                Misskeyインスタンスです。<br />メールアドレスはこのIDと同じです。<br />
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a rel="me" href="https://misskey.io/@mewl"
+                                    >misskey.io</a
+                                >
+                            </h3>
+                            <p>サブです。<br /></p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a rel="me" href="https://twitter.com/@mewl_me"
+                                    >twtr: mewl_me</a
+                                >
+                            </h3>
+                            <p>ちぷつん関連用Twtrアカウントです。<br /></p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a
+                                    rel="me"
+                                    href="https://twitter.com/@MewlHayabusa"
+                                    >twtr: MewlHayabusa</a
+                                >
+                            </h3>
+                            <p>ゲーム関連用Twtrアカウントです。<br /></p>
+                        </li>
+                        <li>
+                            <h3>
+                                <a rel="me" href="https://vrchat.mewl.me"
+                                    >VRChat: mewl hayabusa</a
+                                >
+                            </h3>
+                            <p>VRChatのアカウントです。<br /></p>
+                        </li>
+                    </ul>
+                </article>
+
+                <hr />
+
+                <article id="link">
+                    <h2>リンク</h2>
+                    <hr />
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="https://blog.nekomimi.studio/"
+                                    >ﾌﾞﾛｸﾞ</a
+                                >
+                            </h3>
+                            <p>ﾈｺﾐﾐｽﾀﾁﾞｵのﾌﾞﾛｸﾞです。</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>
+                                <a href="http://jikasei.me/font/kh-dotfont/"
+                                    >自家製フォント工房</a
+                                >
+                            </h3>
+                            <p>
+                                このサイトで使用しているフォント、「KHドットフォントシリーズ
+                                小伝馬町16」の配布元です。<br />
+                                これは
+                                <a
+                                    href="./fonts/khdotfont-20150527/SIL_Open_Font_License_1.1.txt"
+                                    >SIL Open Font License</a
+                                >
+                                で頒布されています。
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+
+                <hr />
+
+                <footer>
+                    <span class="center">&copy;︎ mewl</span>
+                </footer>
+            </div>
+
+            <div id="footer_bar">
+                <!--        <img class="cover" src="img/footer.png">-->
+                <!--        <img class="cover" src="img/Keypad.png">-->
+                <div id="keymap">
+                    <div
+                        id="footer_button_0"
+                        class="footer_button footer_button_center"
+                    >
+                        <span>選択</span>
+                    </div>
+                    <div id="footer_button_1" class="footer_button">
+                        <span>機能</span>
+                    </div>
+                    <div id="footer_button_2" class="footer_button">
+                        <span>MENU</span>
+                    </div>
+                    <div id="footer_button_3" class="footer_button">
+                        <span>再読込</span>
+                    </div>
+                    <div id="footer_button_4" class="footer_button">
+                        <span></span>
+                    </div>
+                </div>
+                <!--        <div id="hardware_key">-->
+                <!--            <div id="hardware_key_1"><button aria-label=""><i class="fas fa-phone-alt"></i> <i class="fas fa-volume-up"></i></button></div>-->
+                <!--            <div id="hardware_key_2"><button>CLR</button></div>-->
+                <!--            <div id="hardware_key_3"><button><i class="fas fa-phone-slash"></i> PWR</button></div>-->
+                <!--        </div>-->
+            </div>
+
+            <div id="internet_menu" style="display: none">
+                <h3>機能</h3>
+                <ul>
+                    <li>
+                        <a href="https://smt.docomo.ne.jp/">iメニュー</a>
+                    </li>
+                    <li>ブックマーク</li>
+                    <li>
+                        画面メモ
+                        <!-- screen2canvas -> png-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="ja" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>mewl.me</title>
+        <meta name="description" content="めうるみーっのWebページ。" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="./img/nekomimi_ico.png" />
+        <link rel="apple-touch-icon" href="./img/nekomimi_ico.png" />
+
+        <link href="./json/notifications.json" as="fetch" rel="preload" />
+
+        <!--    <script src="https://kit.fontawesome.com/98e9262493.js"></script>-->
+    </head>
+    <body style="background-color: black">
+        <div id="line_height"></div>
+
+        <div id="container">
+            <div id="header_bar">
+                <img class="cover" src="./img/header.png" alt="Header" />
+                <div id="clock">
+                    <img id="clock_1" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_2" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_3" src="./img/num/num0000.png" alt="Clock" />
+                    <img id="clock_4" src="./img/num/num0000.png" alt="Clock" />
+                </div>
+            </div>
+
+            <div id="main">
+                <header>
+                    <!--
+            <div style="background: red;width: 12em;padding: 0em 0.5em;margin: 0 -0.5em;">
+                <div style="overflow: hidden;">
+                <style>
+                @keyframes marquee {
+                    from {
+                        transform: translate(0);
+                    }
+                    to {
+                        transform: translate(-57em);
+                    }
+                }
+                </style>
+                <span style="padding-left: 13em;display: block;animation: marquee 10s steps(57,start) infinite;width: 45em;">台風１９号の接近のため、停電などの影響でＭｉｓｓｋｅｙサーバーが停止する可能性があります</span></div>
+            </div>
+-->
+                    <h1 class="title">
+                        <span class="bold"
+                            ><span class="half">m</span
+                            ><span class="half">e</span
+                            ><span class="half">w</span
+                            ><span class="half">l</span
+                            ><span class="half">.</span
+                            ><span class="half">m</span
+                            ><span class="half">e</span></span
+                        >
+                    </h1>
+                </header>
+
+                <hr />
+
+                <article id="notify">
+                    <h2>お知らせ</h2>
+                    <hr />
+                    <ul></ul>
+                </article>
+
+                <hr />
+
+                <div class="align_right">
+                    <a href="index.html"># 戻る</a>
+                </div>
+
+                <hr />
+
+                <footer>
+                    <span class="center">(c) mewl.me</span>
+                </footer>
+            </div>
+
+            <div id="footer_bar">
+                <!--        <img class="cover" src="img/footer.png">-->
+                <!--        <img class="cover" src="img/Keypad.png">-->
+                <div id="keymap">
+                    <div
+                        id="footer_button_0"
+                        class="footer_button footer_button_center"
+                    >
+                        <span>選択</span>
+                    </div>
+                    <div id="footer_button_1" class="footer_button">
+                        <span>機能</span>
+                    </div>
+                    <div id="footer_button_2" class="footer_button">
+                        <span>MENU</span>
+                    </div>
+                    <div id="footer_button_3" class="footer_button">
+                        <span>再読込</span>
+                    </div>
+                    <div id="footer_button_4" class="footer_button">
+                        <span>戻る</span>
+                    </div>
+                </div>
+                <!--        <div id="hardware_key">-->
+                <!--            <div id="hardware_key_1"><button aria-label=""><i class="fas fa-phone-alt"></i> <i class="fas fa-volume-up"></i></button></div>-->
+                <!--            <div id="hardware_key_2"><button>CLR</button></div>-->
+                <!--            <div id="hardware_key_3"><button><i class="fas fa-phone-slash"></i> PWR</button></div>-->
+                <!--        </div>-->
+            </div>
+
+            <div id="internet_menu" style="display: none">
+                <h3>機能</h3>
+                <ul>
+                    <li>
+                        <a href="https://smt.docomo.ne.jp/">iメニュー</a>
+                    </li>
+                    <li>ブックマーク</li>
+                    <li>
+                        画面メモ
+                        <!-- screen2canvas -> png-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./built/notify.js"></script>
+    </body>
+</html>
